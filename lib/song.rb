@@ -15,6 +15,6 @@ class Song
   end
 
   def self.genres
-    @@genres << @genre if !(@@genres.include?(@genre))
+    @@genres.uniq!
   end
 end
