@@ -13,7 +13,7 @@ class Song
     @@count;
   end
 
-  def self.genres 
+  def self.genres
     @@genres << @genre if !(@@genres.include?(@genre))
   end
 end
